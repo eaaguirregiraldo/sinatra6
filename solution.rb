@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 enable :sessions
+set :session_secret, '*&(^B234'
 
 get '/' do
   if (session["cont"].nil?) 
