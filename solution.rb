@@ -6,7 +6,7 @@ set :session_secret, '*&(^B234'
 
 get '/' do
   if (session["cont"].nil?) 
-  	session["cont"] ||= 1   
+  	session["cont"] ||= 0   
   end
    <<-HTML  
       <h1>Mi cuenta es: #{session["cont"]}</h1>
