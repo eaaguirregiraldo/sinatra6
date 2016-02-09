@@ -1,0 +1,7 @@
+<h1>Mi cuenta es: </h1>
+<% @i.each do |contador| %>
+  <h2><%= contador.title %></h2>
+<% end %>
+<form action="/incrementa" method="post">
+	<input type="submit" value="Suma!"></input>
+</form>
